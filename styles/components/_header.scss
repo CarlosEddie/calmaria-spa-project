@@ -23,6 +23,10 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
                 font-weight: 500;
+                &:hover {
+                    color: black;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -47,13 +51,18 @@ header {
                 font-size: 22px;
                 font-family: variaveis.$ft-textos;
                 color: white;
-                background-color: variaveis.$cor-secundaria;
+                background-color: variaveis.$cor-default;
                 width: 280px;
                 border-radius: 40px;
                 height: 66px;
                 border: none;
                 outline: none;
                 font-weight: 600px;
+                transition: opacity 0.5s;
+                &:hover {
+                    opacity: 1.0;
+                    background-color: variaveis.$cor-secundaria;
+                }
             }
         }
         .img-home {
